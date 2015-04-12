@@ -3,24 +3,18 @@ import numpy
 import json
 import sys
 import math
+from collections import Counter
 from scipy.spatial import distance
 
 
 
-with open('color_table.json') as color_table_file:
-    color_table = json.load(color_table_file)
- 
-    datas = []
- 
-    for color in color_table:
-        datas.append([float(num) for num in color.split(',')])
- 
-    color_table = numpy.array(datas)
- 
+with open('clut') as color_table_file:
+    color_table = numpy.array(json.load(color_table_file))   
+
+    
 img = numpy.array(cv2.imread(sys.argv[1]))
 
- 
-# Usage: Find the color in color_table which has the shortest distance between target_color
+ # Usage: Find the color in color_table which has the shortest distance between target_color
 #
 # Example:
 # target_color = [155, 201, 301]
