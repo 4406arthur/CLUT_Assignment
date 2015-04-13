@@ -1,4 +1,5 @@
 # CLUT_Assignment
+
 member list:
   * 1001543
   * 10015
@@ -15,20 +16,24 @@ member list:
   Find similar color
   ---------------------------------------------------
   >  How we find similar color, we use a low-cost approximation method, The proposed algorithm (used by our products EGI, AniSprite and PaletteMaker) is a combination both weighted Euclidean distance functions, where the weight factors depend on how big the "red" component of the colour is. First one calculates the mean level of "red" and then weights the ΔR′ and ΔB′ signals as a function of the mean red level. The distance between colours C1 and C2 (where each of the red, green and blue channels has a range of 0-255) is:
-     
 
-    
-     ![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
-     
+
+     ![Formula](https://4406arthur.pancakeapps.com/lowcost_formula.png)
      
      
-  
+     
 
 
+#How to test our program
 
-#How to test our program 
+Environemnt requiremnt
+----------------------------------------
 
-*Environemnt requiremnt
+* python 2.7.6
+* module-opencv 
+* module-numpy
+* module-scipy
+* module-PIL
 
 
 1. python rank_clut.py source_img
