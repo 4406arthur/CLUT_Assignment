@@ -18,7 +18,7 @@ member list:
   >  How we find similar color, we use a low-cost approximation method, The proposed algorithm (used by our products EGI, AniSprite and PaletteMaker) is a combination both weighted Euclidean distance functions, where the weight factors depend on how big the "red" component of the colour is. First one calculates the mean level of "red" and then weights the ΔR′ and ΔB′ signals as a function of the mean red level. The distance between colours C1 and C2 (where each of the red, green and blue channels has a range of 0-255) is:
 
 
-     See [Formula](https://4406arthur.pancakeapps.com/lowcost_formula.png) page for details.
+     [Formula]: https://4406arthur.pancakeapps.com/lowcost_formula.png
      
      
      
